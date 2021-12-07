@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 18px;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+img{
+  width: 100%;
+  height:400px;
+  object-fit: cover;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn{   
+    width: 100%;
+    padding: 0;
+  }
+  img{
+    height: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Сагсан бөмбөг</h3>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h3>Сагсан бөмбөгийн үүсэл</h3>
+      <img src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/jcjc.sidearmsports.com/images/2020/11/5/basketball.jpg" alt="book">
+      <hr>
+      <p>Энэхүү спортыг доктор Жеймс Нэйсмид (James Naismits) гэдэг Канад эр анх хоёр тийм бөмбөг барин утгагүй гүйх залуусаас санаа аван зохиожээ. <br>
+        Сагсанбөмбөг мэндэлсэн өдөр бол 1891 оны 12 сарын 21-ний маш хүйтэн өвлийн хүйтэн өдөр байсан гэж түүхэнд бичсэн байдаг.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Сагсан бөмбөг</h3>
+      <img src="https://static01.nyt.com/images/2021/08/05/sports/05olympics-briefing-mensbasketball1/merlin_192726429_80ab8b62-bd15-40d5-9881-df5e50e22328-superJumbo.jpg" alt="">
+      <hr>
+
+      <p> Сагсан бөмбөг нь нэг төрлийн багийн спорт юм. Сагсан бөмбөгийн талбайд тус бүр 5 хүнтэй хоёр баг дүрмийн дагуу өрсөлдөгч талын цагирагт бөмбөг шидэж эсвэл тохож оруулан оноо цуглуулж, цаг дуусахад хамгийн олон оноотой нь хождог. Дэлхий дахинд өргөнөөр дэлгэрсэн, онцгойлон их үздэг спортуудын нэг нь сагсан бөмбөг болно.</p>
+    </div>
+    <div class="card">
+      <h3>Сагсан бөмбөгийн ДҮРЭМ</h3>
+      <img src="https://fdlc.com.au/sites/default/files/imce/Stadium%20Basketball.jpg" alt="">
+      <hr>
+
+      <p>Сагсан бөмбөгийн дүрмээр 3.05 метрийн өндөр шонгийн самбарт цагираг бэхлэгдсэн байхаар тогтсон. Арай ойроос бөмбөгийг шидэж оруулбал 2 оноо, гурвын шугамын араас шидэж оруулбал 3 оноог тоглогч багтаа нэмэрлэнэ. Залалт, алхалт, дамжуулалт зэргээр бөмбөгийг хөдөлгөдөг....</p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h3>11-р ангийн сурагч Төгөлдөр</h3>
+  hr
+</div>
+</body>
+</html>
